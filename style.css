@@ -120,3 +120,28 @@ h1 span { font-size: 1.28em; }
   .footer-social { border: 0; justify-content: flex-end; }
   .footer-email { grid-column: 1 / -1; justify-content: center; font-size: 18px; }
 }
+@media (max-width: 450px) {
+ .hero { height: auto; min-height: 450px; grid-template-columns: 1fr; grid-template-rows: 230px 220px; }
+  .hero-copy { padding: 14px 24px; }
+  .main-logo { margin-left: 120px; width: 55px; height: 55px; }
+  h1 { font-size: 36px; }
+  h1 span { font-size: 1.12em; }
+  .hero-copy p { font-size: 22px; margin-top: 7px; }
+  .hero-photo { background-position: center 40%; }
+  .service-section { display: block; padding: 22px 16px 25px; }
+  .section-label { padding: 0 0 18px; }
+  .section-label > img { width: 48px; height: 48px; }
+  .section-label h2 { font-size: 25px; }
+  .short-line { margin-top: 10px; }
+  .phone { font-size: 20px; }
+  .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 12px; }
+  .service-photo, .business .service-photo { height: clamp(110px, 34vw, 190px); }
+  .service-heading, .business .service-heading { min-height: 48px; }
+  .service-heading img, .business .service-heading img { width: 40px; height: 40px; flex-basis: 40px; }
+  .service-heading h3, .business .service-heading h3 { font-size: clamp(16px, 4vw, 20px); }
+  .service-card p, .business .service-card p { font-size: 13px; }
+  .footer { min-height: 150px; height: auto; padding: 15px 18px; grid-template-columns: 1fr 1fr; row-gap: 15px; }
+  .footer-brand { border: 0; }
+  .footer-social { border: 0; justify-content: flex-end; }
+  .footer-email { grid-column: 1 / -1; justify-content: center; font-size: 18px; }
+}
